@@ -120,7 +120,7 @@ class Sistema:
 
         return procesadas
 
-    def enviar_siguiente(self,solicitud):
+    def enviar_siguiente(self,area,solicitud):
         if not self.pila.is_empty():
             siguiente = self.pila.top()
             siguiente.agregar_solicitud(solicitud)
